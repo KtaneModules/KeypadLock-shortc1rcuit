@@ -60,14 +60,17 @@ public class KeypadLock : MonoBehaviour {
 	int moduleId;
 	private bool moduleSolved;
 
+	//Twitch help message
 #pragma warning disable 414
 	private readonly string TwitchHelpMessage = @"Submit the answer with “!{0} (code)”. For example: “!{0} 2806” to input 2806.";
 #pragma warning restore 414
 
+	//This part splits up the inputted twitch plays command and processes each part to get a button to press.
 	public KMSelectable[] ProcessTwitchCommand(string command)
 	{
 		command = command.ToLowerInvariant().Trim();
 
+		//The @"^\d{4}" part, in effect, means "any set of 4 digits".
 		if (Regex.IsMatch(command, @"^\d{4}"))
 		{
 			command = command.Substring(0).Trim();
@@ -76,6 +79,8 @@ public class KeypadLock : MonoBehaviour {
 		return null;
 	}
 
+	//This part force solves Keypad Lock by running the Twitch command with the determined correct answer.
+	//You add the inputpos and mod 4 so the module can input at any stage of input
 	IEnumerator TwitchHandleForcedSolve()
 	{
 		foreach (KMSelectable selectable in ProcessTwitchCommand(String.Concat(submitcode[(0 + inputpos) % 4],submitcode[(1 + inputpos) % 4],submitcode[(2 + inputpos) % 4],submitcode[(3 + inputpos) % 4])))
