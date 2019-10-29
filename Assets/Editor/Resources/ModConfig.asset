@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
+  m_Name: ModConfig
+  m_EditorClassIdentifier: 
+  id: keypadLock
+  title: Keypad Lock
+  author: short_c1rcuit
+  description: "Keypad Lock\r\n\nThere are 23 wrong combinations with four button
+    presses. We can strike 23 times right?\r\n\r\nModule ID: keypadLock\r\n\r\nCreated
+    by Short_c1rcuit\r\n\r\nManual available here: https://ktane.timwi.de/HTML/Keypad%20Lock.html\r\n\r\nBuild
+    1.0 notes:\r\nInitial release\n\nBuild 1.1 notes:\r\nFixed issue with number generation
+    and improved Twitch Plays help message\n\nBuild 1.2 notes:\nFixed issue with logging
+    where the module came up as template on the analyser\n\nBuild 1.3 notes:\r\nFixed
+    an issue where the code would return the incorrect table\r\nAdded better logging\n\nBuild
+    1.3.1 notes:\r\nChanged preveiw image\n\nBuild 1.4 notes:\r\nAdded autosolve feature\n\nBuild
+    1.4.1 notes:\nEdited the autosolve code to work when the module is partially solved.\n\nBuild
+    1.4.2 notes:\nActually edited the autosolve correctly."
+  version: 1.4.2
+  outputFolder: build
+  previewImage: {fileID: 2800000, guid: e019c43e798e8e244ae4cd66d8ee2c2c, type: 3}

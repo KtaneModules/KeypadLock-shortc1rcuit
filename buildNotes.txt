@@ -1,0 +1,36 @@
+Keypad Lock
+There are 23 wrong combinations with four button presses. We can strike 23 times right?
+
+Module ID: keypadLock
+
+Created by Short_c1rcuit
+
+Manual available here: https://ktane.timwi.de/HTML/Keypad%20Lock.html
+
+Build 1.0 notes:
+Initial release
+
+Build 1.1 notes:
+Fixed issue with number generation and improved Twitch Plays help message
+
+Build 1.2 notes:
+
+Fixed issue with logging where the module came up as Template on the analyser
+
+Build 1.3 notes:
+Fixed an issue where the code would return the incorrect table
+Added better logging
+
+Build 1.3.1 notes:
+Changed preveiw image
+
+Build 1.4 notes:
+Added autosolve feature
+
+Build 1.4.1 notes:
+
+Edited the autosolve code to work when the module is partially solved.
+
+Build 1.4.2 notes:
+
+Actually edited the autosolve correctly.
